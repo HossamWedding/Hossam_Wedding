@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#11110f" />
-  <meta name="description" content="A timeless invitation to celebrate the wedding of Hossam on December 4, 2026." />
-  <title>Hossam — Wedding Celebration</title>
+  <meta name="description" content="A timeless invitation to celebrate the wedding of Major Pilot Hossam on December 4, 2026." />
+  <title>Major Pilot Hossam — Wedding Celebration</title>
   <!-- Link preview (WhatsApp / Facebook / etc.) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hossam — Wedding Celebration">
-  <meta property="og:description" content="A timeless invitation to celebrate the wedding of Hossam on December 4, 2026.">
+  <meta property="og:title" content="Major Pilot Hossam — Wedding Celebration">
+  <meta property="og:description" content="A timeless invitation to celebrate the wedding of Major Pilot Hossam on December 4, 2026.">
   <meta property="og:image" content="https://hossamwedding.github.io/Hossam_Wedding/preview_hossam.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -789,6 +789,37 @@ footer .w-10 span{color:#000!important}
 /* first divider: nudged (no extra space added) so it sits dead-centre between the opening frame and the next section's content */
 body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 18px) / 8))}
 </style>
+<style id="major-name-css">
+/* "Major Hossam": same Mollani calligraphy, sized down so the longer name always fits on one line */
+.hero-in h1.names .nm,.env .c-name .n1,footer h3 .n1,header a[href="#hero"] p:first-child{white-space:nowrap!important}
+html body .hero-in h1.names{font-size:clamp(48px,11.5vw,92px)!important}
+html body .env .card-in .c-name{font-size:calc(var(--ew)*.1)!important}
+.hero-in h1.names,.hero-in h1.names .nm{font-family:'Mollani','Great Vibes',cursive!important;font-weight:400!important;font-style:normal!important;text-transform:none!important;letter-spacing:.01em!important;-webkit-text-stroke:.014em currentColor;paint-order:stroke fill}
+html body header a[href="#hero"] p:first-child{font-size:20px!important}
+html body footer h3.font-serif-luxury{font-size:clamp(34px,7.2vw,50px)!important}
+</style>
+
+<style id="major-two-line-css">
+/* "Major" always on the first line, "Hossam" wraps to the second, same Mollani calligraphy everywhere */
+b.mj,b.hs{display:block!important;font:inherit!important;font-family:'Mollani','Great Vibes',cursive!important;font-weight:400!important;font-style:normal!important;text-transform:none!important;letter-spacing:.01em!important;white-space:nowrap!important;line-height:1!important;color:inherit!important;text-align:center}
+b.hs{margin-top:.6em!important}
+/* "Major Pilot": smaller than "Hossam", same font */
+b.mj{font-size:.62em!important;margin-bottom:.32em!important}
+/* hero */
+html body .hero-in h1.names{font-size:clamp(40px,11.5vw,96px)!important}
+html body .hero-in h1.names .nm{display:block!important;text-align:center}
+/* opening card */
+html body .env .c-name{height:auto!important;overflow:visible!important}
+html body .env .c-name .n1{position:static!important;left:auto!important;top:auto!important;transform:none!important;display:block!important;width:100%!important}
+/* footer */
+html body footer h3.font-serif-luxury{height:auto!important;font-size:clamp(34px,7.2vw,52px)!important;padding:.1em 0!important}
+html body footer h3 .n1{position:static!important;left:auto!important;top:auto!important;transform:none!important;display:block!important}
+/* top bar */
+html body header a[href="#hero"] p:first-child{font-size:22px!important;padding:.15em 0 0!important;line-height:1!important;text-align:left}
+html body header a[href="#hero"] p:first-child b{text-align:left!important}
+html body header a[href="#hero"] p:first-child b.hs{margin-top:.25em!important}
+html body header a[href="#hero"] p:first-child b.mj{font-size:.68em!important}
+</style>
 </head>
 <body class="opening-active relative selection:bg-navy selection:text-white">
   <canvas id="petals-canvas"></canvas>
@@ -808,7 +839,7 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
         <div class="card-in">
           <p class="quran-font c-ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
           <p class="c-small">Wedding Invitation</p>
-          <p class="c-name"><span class="n1">Hossam</span></p>
+          <p class="c-name"><span class="n1"><b class="mj">Major Pilot</b><b class="hs">Hossam</b></span></p>
         </div>
       </div>
         <div class="part pocket"><svg viewBox="0 0 300 200" class="layer" style="overflow:visible">
@@ -855,7 +886,7 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
           <span class="he-mark font-serif-luxury text-xl font-bold tracking-widest text-gold-300">H&amp;E</span>
         </div>
         <div class="hidden sm:block text-left">
-          <p class="font-serif-luxury text-sm tracking-widest uppercase font-semibold text-espresso">Hossam</p>
+          <p class="font-serif-luxury text-sm tracking-widest uppercase font-semibold text-espresso"><b class="mj">Major Pilot</b><b class="hs">Hossam</b></p>
           <p class="text-[10px] tracking-widest text-gold-600 uppercase">December 4, 2026</p>
         </div>
       </a>
@@ -886,12 +917,12 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
         <p class="quran-font font-arabic-calligraphy text-lg sm:text-2xl text-deep">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
         <p dir="rtl" lang="ar" class="quran-font font-arabic-calligraphy text-base sm:text-xl text-charcoal font-semibold leading-relaxed mt-2">« وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً »</p>
         <div class="mono"><span class="he-mark font-serif-luxury">H &amp; E</span></div>
-        <p class="scr text-2xl">Join us for</p>
+        <p class="scr text-2xl">Join me for</p>
         <p class="cap text-sm">The</p>
         <p class="scr wedding-word text-5xl sm:text-6xl leading-none mb-4">Wedding</p>
-        <p class="cap together-line text-[10px] sm:text-xs mb-2">Together with our families</p>
-        <p class="font-arabic-calligraphy text-lg sm:text-2xl text-deep font-bold mb-3">يسعدنا ويشرفنا دعوتكم لحضور حفل زفافنا</p>
-        <h1 class="names">Hossam</h1>
+        <p class="cap together-line text-[10px] sm:text-xs mb-2">Together with my family</p>
+        <p class="font-arabic-calligraphy text-lg sm:text-2xl text-deep font-bold mb-3">يسعدني ويشرفني دعوتكم لحضور حفل زفافي</p>
+        <h1 class="names"><span class="nm"><b class="mj">Major Pilot</b><b class="hs">Hossam</b></span></h1>
         <p class="scr text-3xl">December</p>
         <div class="datebox"><span>Fri</span><i></i><b>4</b><i></i><span>2026</span></div>
         <p class="scr text-2xl mt-2">at 4:00 PM</p>
@@ -911,7 +942,7 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
     <section id="countdown" class="sec"><div class="paper reveal">
       <div class="max-w-4xl mx-auto text-center">
         
-        <p class="kicker font-serif-luxury text-sm tracking-[0.3em] uppercase text-gold-700 mb-2">Every Second Brings Us Closer</p>
+        <p class="kicker font-serif-luxury text-sm tracking-[0.3em] uppercase text-gold-700 mb-2">Every Second Brings Me Closer</p>
         <h2 class="font-serif-luxury text-3xl sm:text-4xl text-espresso mb-8">Counting Down To Forever</h2>
 
         <div class="grid grid-cols-4 gap-2 sm:gap-6 max-w-2xl mx-auto">
@@ -957,7 +988,7 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
     <section id="venue" class="sec"><div class="paper reveal">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
-          <p class="kicker font-serif-luxury text-sm tracking-[0.3em] uppercase text-gold-700 mb-1">Join Our Celebration</p>
+          <p class="kicker font-serif-luxury text-sm tracking-[0.3em] uppercase text-gold-700 mb-1">Join My Celebration</p>
           <h2 class="font-serif-luxury text-3xl sm:text-5xl text-espresso">The Venue &amp; Location</h2>
           <p class="font-arabic-calligraphy text-lg text-charcoal/80 mt-2">مكان الحفل وخريطة الوصول</p>
           <div class="w-16 h-px bg-gold-800/60 mx-auto mt-4"></div>
@@ -1001,10 +1032,10 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
         <span class="he-mark font-serif-luxury text-lg font-bold text-gold-300">H&amp;E</span>
       </div>
 
-      <h3 class="font-serif-luxury text-3xl gold-text-light font-normal"><span class="n1">Hossam</span></h3>
+      <h3 class="font-serif-luxury text-3xl gold-text-light font-normal"><span class="n1"><b class="mj">Major Pilot</b><b class="hs">Hossam</b></span></h3>
       
       <p class="font-arabic-calligraphy text-base text-gold-300">
-        نسأل الله أن يبارك لنا ويبارك علينا ويجمع بيننا في خير
+        أسأل الله أن يبارك لي ويبارك عليّ ويجمع بيني وبين زوجتي في خير
       </p>
 
       <p class="text-xs text-gold-200/70 uppercase tracking-widest pt-4">
@@ -1035,7 +1066,7 @@ body #hero + .section-divider{transform:translateY(calc((clamp(22px,4vw,48px) + 
         minsEl.textContent = '00';
         secsEl.textContent = '00';
         statusEl.classList.remove('hidden');
-      statusEl.textContent = 'The Wedding Celebration Has Begun! Mabrouk Hossam! 🎉 — بدأ الاحتفال! مبروك حسام';
+      statusEl.textContent = 'The Wedding Celebration Has Begun! Mabrouk Major Pilot Hossam! 🎉 — بدأ الاحتفال! مبروك الرائد حسام';
         return;
       }
 
